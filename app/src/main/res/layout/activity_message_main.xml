@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageMainActivity" android:background="@drawable/relative_bordar"
+    android:gravity="center">
+    <LinearLayout
+        style="@style/LiniarLayoutStyle"
+        android:background="@drawable/liniar_layout_border"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/message"
+            />
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Text Message"/>
+
+        <EditText
+            android:id="@+id/messageText"
+            style="@style/MessageEditTextStyle"
+            android:background="@drawable/edit_text_bordar"
+            android:drawableLeft="@drawable/mess"
+            android:inputType="textMultiLine"
+            android:hint="Text Message"/>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/messageButton"
+                style="@style/ButtonStyle"
+                android:clickable="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_bordar"
+                android:text="Send"
+                />
+            <Button
+                android:id="@+id/cancle"
+                style="@style/ButtonStyle"
+                android:clickable="true"
+                android:background="@drawable/button_bordar"
+                android:text="Cancle"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

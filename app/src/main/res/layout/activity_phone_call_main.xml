@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneCallMainActivity"
+    android:background="@drawable/relative_bordar"
+    android:gravity="center">
+    <LinearLayout
+        style="@style/LiniarLayoutStyle"
+        android:background="@drawable/liniar_layout_border"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/phone"
+            />
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Phone Number"/>
+
+        <EditText
+            android:id="@+id/numberText"
+            style="@style/EditTextStyle"
+            android:background="@drawable/edit_text_bordar"
+            android:drawableLeft="@drawable/call"
+            android:inputType="numberDecimal"
+            android:hint="Number"/>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/call"
+                style="@style/ButtonStyle"
+                android:clickable="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_bordar"
+                android:text="Call"
+                />
+            <Button
+                android:id="@+id/message"
+                style="@style/ButtonStyle"
+                android:clickable="true"
+                android:background="@drawable/button_bordar"
+                android:text="Message"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
